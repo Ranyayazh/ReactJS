@@ -1,0 +1,657 @@
+General Fullstack
+HTML,CSS,JS,Node JS,Express, React,API,DB
+compilation time of C(language) is less(2 sec)
+using R language we can create the same what we create in python but compared to R , python has larger libraries
+python compilation time is 10 sec
+
+why we use python?
+ lot of libraries
+ syntax is simple
+ open source
+ mathematical function are high(for java also)
+ easy understanding
+ high contributors
+ linking between languages are easy(not for all cases)
+ web app larger 
+ platform independent(once your model is build)
+ Interpretor
+
+why application are created in java?
+ computation time is 4 sec
+ easy connectivity
+ the appliaction oriented library is high in java 
+
+front end --> HTML,CSS,JS,angular,react,Vue
+back end --> C,C++,Java,Python,Velocity,C#,JS,Node JS,Express
+database
+SQL and NOSQL are stored in tables
+SQL : MySQL,SQL-server
+NOSQL:MongoDB(MDB),Hbase,DynamoDB(DDB)
+ how to query nosql data ?
+   JSON
+    eg:{
+         s.no:
+         name:
+       }
+
+API : Application Programming Interface. It is a intermediate between front end and back end
+eg:fib.fibo()
+The process of hosting your process is known as DevOps
+
+              front end --.
+#full stack:               .  API -- DevOps
+              back end -- .
+
+
+                             front end---.
+#AI perspective Fullstack :               .   API -- MLOps(automatic)
+                             back end ---.       (ML+DevOps)
+                          (code)-->model 
+
+MEAN                                             .                           MERN
+M --> MongoDB                                    .                           M -->MongoDB
+E --> Express JS                                 .                           E -->Express JS
+A --> Angular                                    .                           R --> React
+N --> Node JS                                    .                           N --> Node JS
+
+Git
+local
+stage
+remote
+
+local <----------------> stage<-------------->remote
+  *      git add                 git diff--->stage
+file
+
+
+               day_2
+git status
+create a file in ReactJS as index.html
+git status
+git add .
+git commit -m "Adding index.html"
+git push -u origin main  OR git push -f origin main
+git log
+git push
+git branch
+git branch Janani
+git branch -D Janani
+git branch Jananiksha
+git branch
+git checkout Jananiksha
+git switch main
+git checkout -b PJK
+git branch
+git checkout -b KSP
+git -D KSP
+git checkout Jananiksha
+git branch -D KSP
+git branch
+git diff
+git status
+git add index.html
+git commit -m "Changed the indexl.html file in Jananiksha Branch"
+git checkout -b KSP
+git add index.html
+git commit -m "Dummy"
+git push origin KSP
+
+
+
+
+
+WITH ERRORS:
+Microsoft Windows [Version 10.0.19044.2364]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\JANANI\Desktop\ReactJS>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+C:\Users\JANANI\Desktop\ReactJS>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+C:\Users\JANANI\Desktop\ReactJS>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\JANANI\Desktop\ReactJS>git add .
+
+C:\Users\JANANI\Desktop\ReactJS>git commit -m "Adding index.html"
+[main 1755163] Adding index.html
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+
+C:\Users\JANANI\Desktop\ReactJS>git push -u origin main
+To https://github.com/Jananiksha/ReactJS.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Jananiksha/ReactJS.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\Users\JANANI\Desktop\ReactJS>git push -f origin main
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (6/6), 473 bytes | 473.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Jananiksha/ReactJS.git
+ + 483f125...1755163 main -> main (forced update)
+
+C:\Users\JANANI\Desktop\ReactJS>git log
+commit 175516342fd6213427a136fa482693753fd48d39 (HEAD -> main, origin/main)
+Author: Janani <jananiksha664@gmail.com>
+Date:   Tue Aug 1 09:26:39 2023 +0530
+
+    Adding index.html
+
+commit 219002d3e8288c7d3886f8e16e7ddb1edf853186
+Author: Janani <jananiksha664@gmail.com>
+Date:   Mon Jul 31 15:48:35 2023 +0530
+
+    first commit
+
+C:\Users\JANANI\Desktop\ReactJS>git revert 175516342fd6213427a136fa482693753fd48d39
+[main 0271aa5] Revert "Adding index.html"
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 index.html
+
+C:\Users\JANANI\Desktop\ReactJS>git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (1/1), done.
+Writing objects: 100% (2/2), 266 bytes | 266.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Jananiksha/ReactJS.git
+   1755163..0271aa5  main -> main
+branch 'main' set up to track 'origin/main'.
+
+C:\Users\JANANI\Desktop\ReactJS>git restore --staged ind.html
+error: pathspec 'ind.html' did not match any file(s) known to git
+
+C:\Users\JANANI\Desktop\ReactJS>git restore 175516342fd6213427a136fa482693753fd48d39
+error: pathspec '175516342fd6213427a136fa482693753fd48d39' did not match any file(s) known to git
+C:\Users\JANANI\Desktop\ReactJS>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+C:\Users\JANANI\Desktop\ReactJS>git restore --staged index.html
+error: pathspec 'index.html' did not match any file(s) known to git
+
+C:\Users\JANANI\Desktop\ReactJS>git log
+commit 0271aa5b6d4d675190cb31925e3d45463875f736 (HEAD -> main, origin/main)
+Author: Janani <jananiksha664@gmail.com>
+Date:   Tue Aug 1 09:29:41 2023 +0530
+
+    Revert "Adding index.html"
+
+    This reverts commit 175516342fd6213427a136fa482693753fd48d39.
+
+commit 175516342fd6213427a136fa482693753fd48d39
+Author: Janani <jananiksha664@gmail.com>
+Date:   Tue Aug 1 09:26:39 2023 +0530
+
+    Adding index.html
+
+commit 219002d3e8288c7d3886f8e16e7ddb1edf853186
+Author: Janani <jananiksha664@gmail.com>
+Date:   Mon Jul 31 15:48:35 2023 +0530
+
+    first commit
+
+C:\Users\JANANI\Desktop\ReactJS>git log
+commit 0271aa5b6d4d675190cb31925e3d45463875f736 (HEAD -> main, origin/main)
+Author: Janani <jananiksha664@gmail.com>
+Date:   Tue Aug 1 09:29:41 2023 +0530
+
+    Revert "Adding index.html"
+
+    This reverts commit 175516342fd6213427a136fa482693753fd48d39.
+
+commit 175516342fd6213427a136fa482693753fd48d39
+Author: Janani <jananiksha664@gmail.com>
+Date:   Tue Aug 1 09:26:39 2023 +0530
+
+    Adding index.html
+
+commit 219002d3e8288c7d3886f8e16e7ddb1edf853186
+Author: Janani <jananiksha664@gmail.com>
+Date:   Mon Jul 31 15:48:35 2023 +0530
+
+    first commit
+
+C:\Users\JANANI\Desktop\ReactJS>
+C:\Users\JANANI\Desktop\ReactJS>
+C:\Users\JANANI\Desktop\ReactJS>
+C:\Users\JANANI\Desktop\ReactJS>
+C:\Users\JANANI\Desktop\ReactJS>
+C:\Users\JANANI\Desktop\ReactJS>
+C:\Users\JANANI\Desktop\ReactJS>
+C:\Users\JANANI\Desktop\ReactJS>
+C:\Users\JANANI\Desktop\ReactJS>
+C:\Users\JANANI\Desktop\ReactJS>
+C:\Users\JANANI\Desktop\ReactJS>
+C:\Users\JANANI\Desktop\ReactJS>
+C:\Users\JANANI\Desktop\ReactJS>
+C:\Users\JANANI\Desktop\ReactJS>
+C:\Users\JANANI\Desktop\ReactJS>
+C:\Users\JANANI\Desktop\ReactJS>
+C:\Users\JANANI\Desktop\ReactJS>
+C:\Users\JANANI\Desktop\ReactJS>
+C:\Users\JANANI\Desktop\ReactJS>
+C:\Users\JANANI\Desktop\ReactJS>
+C:\Users\JANANI\Desktop\ReactJS>
+C:\Users\JANANI\Desktop\ReactJS>
+C:\Users\JANANI\Desktop\ReactJS>
+C:\Users\JANANI\Desktop\ReactJS>
+C:\Users\JANANI\Desktop\ReactJS>
+C:\Users\JANANI\Desktop\ReactJS>
+C:\Users\JANANI\Desktop\ReactJS>
+C:\Users\JANANI\Desktop\ReactJS>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\JANANI\Desktop\ReactJS>git add .
+
+C:\Users\JANANI\Desktop\ReactJS>git commit -m "Adding index.html"
+[main a14634a] Adding index.html
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+
+C:\Users\JANANI\Desktop\ReactJS>git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 282 bytes | 282.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Jananiksha/ReactJS.git
+   0271aa5..a14634a  main -> main
+branch 'main' set up to track 'origin/main'.
+
+C:\Users\JANANI\Desktop\ReactJS>git log
+commit a14634a23b5fe5e17c0dcbe38261ca8be8f894d3 (HEAD -> main, origin/main)
+Author: Janani <jananiksha664@gmail.com>
+Date:   Tue Aug 1 09:47:26 2023 +0530
+
+    Adding index.html
+
+commit 0271aa5b6d4d675190cb31925e3d45463875f736
+Author: Janani <jananiksha664@gmail.com>
+Date:   Tue Aug 1 09:29:41 2023 +0530
+
+    Revert "Adding index.html"
+
+    This reverts commit 175516342fd6213427a136fa482693753fd48d39.
+
+commit 175516342fd6213427a136fa482693753fd48d39
+Author: Janani <jananiksha664@gmail.com>
+Date:   Tue Aug 1 09:26:39 2023 +0530
+
+    Adding index.html
+
+commit 219002d3e8288c7d3886f8e16e7ddb1edf853186
+Author: Janani <jananiksha664@gmail.com>
+Date:   Mon Jul 31 15:48:35 2023 +0530
+
+    first commit
+
+C:\Users\JANANI\Desktop\ReactJS>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+C:\Users\JANANI\Desktop\ReactJS>git push
+Everything up-to-date
+
+C:\Users\JANANI\Desktop\ReactJS>git branch
+* main
+
+C:\Users\JANANI\Desktop\ReactJS>git branch -D TestBranch
+error: branch 'TestBranch' not found.
+
+C:\Users\JANANI\Desktop\ReactJS>git branch -D
+fatal: branch name required
+
+C:\Users\JANANI\Desktop\ReactJS>git branch Janani
+
+C:\Users\JANANI\Desktop\ReactJS>git branch
+  Janani
+* main
+
+C:\Users\JANANI\Desktop\ReactJS>git branch -D Janani
+Deleted branch Janani (was a14634a).
+
+C:\Users\JANANI\Desktop\ReactJS>git branch Jananiksha
+
+C:\Users\JANANI\Desktop\ReactJS>git branch
+  Jananiksha
+* main
+
+C:\Users\JANANI\Desktop\ReactJS>git checkout Jananiksha
+Switched to branch 'Jananiksha'
+
+C:\Users\JANANI\Desktop\ReactJS>git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+C:\Users\JANANI\Desktop\ReactJS>git chekout -b PJK
+git: 'chekout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+C:\Users\JANANI\Desktop\ReactJS>git checkout -b PJK
+Switched to a new branch 'PJK'
+
+C:\Users\JANANI\Desktop\ReactJS>git branch
+  Jananiksha
+* PJK
+  main
+
+C:\Users\JANANI\Desktop\ReactJS>git diff
+
+C:\Users\JANANI\Desktop\ReactJS>git status
+On branch PJK
+nothing to commit, working tree clean
+
+C:\Users\JANANI\Desktop\ReactJS>git add index.html
+
+C:\Users\JANANI\Desktop\ReactJS>git status
+On branch PJK
+nothing to commit, working tree clean
+
+C:\Users\JANANI\Desktop\ReactJS>gti add index.html
+'gti' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\JANANI\Desktop\ReactJS>git add index.html
+
+C:\Users\JANANI\Desktop\ReactJS>git push
+fatal: The current branch PJK has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin PJK
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'
+C:\Users\JANANI\Desktop\ReactJS>git status
+On branch PJK
+nothing to commit, working tree clean
+
+C:\Users\JANANI\Desktop\ReactJS>git add index.html
+
+C:\Users\JANANI\Desktop\ReactJS>git commit -m "Dummy"
+On branch PJK
+nothing to commit, working tree clean
+
+C:\Users\JANANI\Desktop\ReactJS>git push
+fatal: The current branch PJK has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin PJK
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+C:\Users\JANANI\Desktop\ReactJS>git origin PJK
+git: 'origin' is not a git command. See 'git --help'.
+
+C:\Users\JANANI\Desktop\ReactJS>git switch PJK
+Already on 'PJK'
+
+C:\Users\JANANI\Desktop\ReactJS>git origin PJK
+git: 'origin' is not a git command. See 'git --help'.
+
+C:\Users\JANANI\Desktop\ReactJS>git switch Janani
+fatal: invalid reference: Janani
+
+C:\Users\JANANI\Desktop\ReactJS>git switch Jananiksha
+Switched to branch 'Jananiksha'
+
+C:\Users\JANANI\Desktop\ReactJS>git origin PJK
+git: 'origin' is not a git command. See 'git --help'.
+
+C:\Users\JANANI\Desktop\ReactJS>git origin Jananiksha
+git: 'origin' is not a git command. See 'git --help'.
+
+C:\Users\JANANI\Desktop\ReactJS>git push origin JPK
+error: src refspec JPK does not match any
+error: failed to push some refs to 'https://github.com/Jananiksha/ReactJS.git'
+
+C:\Users\JANANI\Desktop\ReactJS>git branch
+* Jananiksha
+  PJK
+  main
+
+C:\Users\JANANI\Desktop\ReactJS>git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+C:\Users\JANANI\Desktop\ReactJS>git checkout -b KSP
+Switched to a new branch 'KSP'
+
+C:\Users\JANANI\Desktop\ReactJS>git -D KSP
+unknown option: -D
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--config-env=<name>=<envvar>] <command> [<args>]
+
+C:\Users\JANANI\Desktop\ReactJS>git checkout Jananiksha
+Switched to branch 'Jananiksha'
+
+C:\Users\JANANI\Desktop\ReactJS>git branch -D KSP
+Deleted branch KSP (was a14634a).
+
+C:\Users\JANANI\Desktop\ReactJS>git branch
+* Jananiksha
+  PJK
+  main
+
+C:\Users\JANANI\Desktop\ReactJS>git diff
+
+C:\Users\JANANI\Desktop\ReactJS>git status
+On branch Jananiksha
+nothing to commit, working tree clean
+
+C:\Users\JANANI\Desktop\ReactJS>git add index.html
+
+C:\Users\JANANI\Desktop\ReactJS>git commit -m "Changed the indexl.html file in Jananiksha Branch"
+On branch Jananiksha
+nothing to commit, working tree clean
+
+C:\Users\JANANI\Desktop\ReactJS>git checkout -b KSP
+Switched to a new branch 'KSP'
+
+C:\Users\JANANI\Desktop\ReactJS>git status
+On branch KSP
+nothing to commit, working tree clean
+
+C:\Users\JANANI\Desktop\ReactJS>git add index.html
+
+C:\Users\JANANI\Desktop\ReactJS>git commit -m "Dummy"
+On branch KSP
+nothing to commit, working tree clean
+C:\Users\JANANI\Desktop\ReactJS>git push origin KSP
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'KSP' on GitHub by visiting:
+remote:      https://github.com/Jananiksha/ReactJS/pull/new/KSP
+remote:
+To https://github.com/Jananiksha/ReactJS.git
+ * [new branch]      KSP -> KSP
+
+C:\Users\JANANI\Desktop\ReactJS>
+git switch main
+git marge main KSP
+
+
+         HTML:
+Hypertext markup language
+designing web page
+
+HOW HTML IS RELATED TO RACTJS?
+jsx -> javascript xml
+
+<head>
+<title> </title>
+<img> </img>
+<link> </link>
+<script src:""> </script>
+<i> </i> -> italic
+<u> </u> -> underline
+<b> </b>--bold
+<br>--break
+<ul> <ul>---unordered list
+<ol> </ol>ordered list
+<li> </li>-- tag list (decide the type)type--->type of the ordered list
+start --->start should to be in numbers(particularly start from the number)
+<ol type="1" start="5">
+<a>---->hyperlink
+href ----> to refer link
+<div> </div>---> division(to split or divide the webpage)(to organize the webpage)
+<span>  </span>
+link tag is used to link style CSS and HTML
+
+CSS:
+(important)CASCADING STYLE SHEET:
+Customization
+User Experience
+(important)styling the web page
+
+types of CSS:
+@ Inline  CSS ---> same line , tag(eg:<h1 style=" colour:blue">This is </h1>
+
+@Internal CSS --> Writing CSS code inside HTML file(if you want your code to be messy just stay in internal css)
+
+eg:
+  h1 {
+      colour:blue
+     }
+    <h1>This is</h1>
+
+@External  CSS ---> Creating separate file for CSS(if you want your code to be neat then we can choose external css)
+
+eg: style CSS --> all our code
+
+general CSS syntax:
+selector{
+         Declaration: value,
+         Declaration: value
+}
+
+selector type
+1) element --> tags are called as element eg:<p>
+2)class ---> eg:.hello---> p.hello(only applicable for paragraph tag)
+3)id--->#hello{}
+4)universal--->*(meaning whole html is hold by css)
+5)grouping---->appicable only for elements
+   eg:for grouping
+     h1{
+        color:red
+       }
+     h1{     ----->       but the alternate syntax is  h1,p,h2{......}
+        color:blue
+       }
+padding is used in creating forms
+
+C:\Users\admin\Downloads\ReactJS>git add .
+
+C:\Users\admin\Downloads\ReactJS>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Wallpapers-pexels-photo.jpg
+        new file:   ranya_cartoon.jpg
+        modified:   sample.htm
+
+
+C:\Users\admin\Downloads\ReactJS>git commit -m "Adding created successfully"
+[main 02b0bee] Adding created successfully
+ 3 files changed, 46 insertions(+), 37 deletions(-)
+ create mode 100644 Wallpapers-pexels-photo.jpg
+ create mode 100644 ranya_cartoon.jpg
+
+C:\Users\admin\Downloads\ReactJS>git commit
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\Users\admin\Downloads\ReactJS>git push
+To https://github.com/Ranyayazh/ReactJS.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Ranyayazh/ReactJS.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\Users\admin\Downloads\ReactJS>git push
+To https://github.com/Ranyayazh/ReactJS.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Ranyayazh/ReactJS.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\Users\admin\Downloads\ReactJS>git pull
+remote: Enumerating objects: 12, done.
+remote: Counting objects: 100% (12/12), done.X
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 9 (delta 3), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (9/9), 2.34 KiB | 46.00 KiB/s, done.
+From https://github.com/Ranyayazh/ReactJS
+   753a638..be6961e  main       -> origin/main
+Auto-merging sample.htm
+Merge made by the 'ort' strategy.
+ README.md  | 54 +++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ sample.htm |  2 +-
+ 2 files changed, 54 insertions(+), 2 deletions(-)
+
+C:\Users\admin\Downloads\ReactJS>git push
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 879.24 KiB | 10.99 MiB/s, done.
+Total 7 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Ranyayazh/ReactJS.git
+   be6961e..529ad40  main -> main
+
+
