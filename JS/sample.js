@@ -102,9 +102,31 @@ for (var ele in a)
 } */
 
 //functions
-
+/* 
 function fun_names(a,b){
     console.log(a + b +"ranya"+ 5+ 5)
     return a + b +"ranya"+ 5+ 5
 }
-console.log(fun_names(5,5))
+console.log(fun_names(5,5)) */
+
+/* a = () => console.log("Hello World")
+
+a() */
+
+class AIANDDS{
+    abcd = "alphabet"
+    diff(){
+        console.log("Ranya is a good girl")
+    }
+    sum() {
+        console.log(this.abcd)
+        console.log("Ranya")
+        this.diff()
+    }
+   
+}
+a = new Object()
+a.name = "AI & DS"
+console.log(a)
+object1 = new AIANDDS
+object1.sum()
