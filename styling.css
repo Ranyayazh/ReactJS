@@ -1,6 +1,6 @@
 h2,h3,p{
     font-size: 20ps;
-    color:violet;
+    color: aliceblue;
     position:relative;
 }
 body{
@@ -8,4 +8,46 @@ body{
     background-repeat: no-repeat;
     background-position: 0.5vh;
     background-size: cover;
+}
+.outerbox{
+    min-height:50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    text-transform:uppercase;
+    text-indent: 5px;
+    color: azure;
+
+}
+.box{
+    width: 200px;
+    height: 50px;
+    background-color:black;
+    border: 2px solid white;
+    color: azure;
+}
+
+.container {
+    display: flex;
+}
+
+.para1{
+    background-color:azure;
+    flex:0.5
+}
+.para2{
+    background-color:azure;
+    flex:0.5
+}
+.para3{
+    background-color:azure;
+    flex:0.5
+
+}
+.para4{
+    background-color:azure;
+    flex:0.5
+
 }
